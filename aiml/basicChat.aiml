@@ -1,0 +1,71 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	<!-- basic_chat.aiml -->
+ 
+    <category>
+		<pattern>HELLO</pattern>
+        <template>
+            Well, hello!
+        </template>
+    </category>
+ 
+    <category>
+		<pattern>WHAT ARE YOU</pattern>
+        <template>
+            我是机器人
+        </template>
+    </category>
+	
+	<category>
+		<pattern>我叫 *</pattern>
+		<template>
+			很高兴认识<set name="usrname"><star/></set>
+		</template>  
+   </category>
+   
+   <category>
+		<pattern>你叫 *</pattern>
+		<template>
+			<think>很高兴为您服务，我是<set name="cqname"><star/></set></think>
+		</template>  
+   </category>
+	
+	<category>
+		<pattern>*</pattern>
+		<template>
+			unknown
+		</template>
+	</category>
+
+	<category>
+		<pattern>  XE6  X97  XA9  XE4  XB8  X8A</pattern>
+        <template>
+            朝花夕拾
+        </template>
+    </category>
+	
+    <category>
+		<pattern>XE6 X97 XA9</pattern>
+        <template>
+            早上
+        </template>
+    </category>
+
+    <category>
+		<pattern>ONE TIME I *</pattern>
+		<template>
+			<random>
+				<li>Go on.</li>
+				<li>How old are you?</li>
+				<li>Be more specific.</li>
+				<li>I did not know that.</li>
+				<li>Are you telling the truth?</li>
+				<li>I don't know what that means.</li>
+				<li>Try to tell me that another way.</li>
+				<li>Are you talking about an animal, vegetable or mineral?</li>
+				<li>What is it?</li>
+			</random>
+		</template>
+	</category>
+	
+ 
+</aiml>
